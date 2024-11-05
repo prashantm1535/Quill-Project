@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/api/v1/journals" method="get">
+        <label for="search-bar">Search</label>
+        <input id="search-bar" type="text" name="search" placeholder="Search Journal">
+
+        <label for="journal-category">Journal Category</label>
+        <select id="journal-category" name="category">
+            <option value="idea">Idea</option>
+            <option value="task">Task</option>
+            <option value="memory">Memory</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
